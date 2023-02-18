@@ -1,0 +1,277 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title> UNGOGO LOCAL GOVERNMENT AREA</title>
+        <link rel="icon" type="image/x-icon" href="images/logo 1.jfif">
+        <style>
+            body{
+                background-color: rgb(134, 230, 134);
+            }
+         
+            ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+    * {box-sizing:border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin:auto;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) 
+  .column {
+    width: 100%;
+  }
+hr{
+  margin-top:0mm;
+}
+.centered {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  font-size: 200%;
+  color: rgb(224, 191, 148);
+}
+a:link, a:visited{
+  color: #e20e0e;
+  color: aliceblue;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+}
+a:hover, a:active{
+  background-color: #21f132;
+}
+
+
+p img {
+  border: 5px solid #15c50f;
+}
+p.intro::first-letter{
+   color: #e21818;
+   font-size: 200%;
+
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border: 3px solid rgb(87, 209, 93);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 200%;
+  color: #2317c7;
+  
+}
+/* Caption text */
+.text {
+  color: rgb(240, 15, 15);
+  font-size: 100%;
+  padding: 100px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 200%;
+  text-align: top-center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #e20e0e;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #f02828;
+    }
+    footer{
+      padding: 10px;
+      background-color: #717171;
+      color: aliceblue;
+      text-align: center;
+    }
+   
+
+
+        </style>
+    </head>
+    <body>
+      <td style="width: 5550px;">
+        <h1 style="text-align:center;font-size:300%;text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); color:hsl(240, 33%, 96%);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UNGOGO LOCAL GOVERNMENT AREA PORTAL</h1>
+        <p style="color: aliceblue;font-size: 150%;"><i><marquee>Welcome to the Ungogo Local Goverment Official Website.</marquee></i></p>
+      </td>
+        <ul>
+            <li><a href="#home">Home</a></li>
+             <li><a href="#Academics">History of UGG</a></li>
+             <li><a href="About Ramat/index.html">History of Ramat</a></li>
+            <li><a href="#undergraduate">Indigine Registration</a></li>
+            <li><a href="#post graduate">Print Indigine Template</a></li>
+            <li><a href="admission2023">Scholarship</a></li>
+            <li><a href="#undergraduate">Vacancy</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/ramat.jpg" width="50" height="500" style="width:100%">
+              <div style="height: 100%;"  class="top-left"><b><i>The Executive Chairman <br>Engr.Dr. Abdullahi Garba Ramat</i></b><br>
+                <a href="About Ramat/index.html"
+                >Click Here for more About Ramat</a>
+              </div>
+
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/ungogo logo.jpg" width="50" height="500" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/scholars.JPG" width="50" height="500" style="width:100%">
+              <div style="height: 100%;" class="centered"><b><i>RAMAT SCHOLARS </b></i></div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 6 minutes
+            }
+            </script>
+            <h3 style="color: aliceblue;font-family:cursive;font-size: 140%;"> WELCOME TO UNGOGO LOCAL GOVERNMENT AREA </h3>
+            <hr style="width: 16cm;height: 3px; float:left;">
+            <p><img src="images/student (2).jpg"
+              alt="map"
+              style="width: 700px; height: 300px;  float: right; margin-right: 15px;"><p class="intro"> Ungogo is one of the Local Government 
+                Area in kano state, Its Secretariat are in the town of Ungogo to the north of the city of Kano.It has an area of 204 km2 and 
+                a population of 369,657 at the 2006 census. <p> The area’s populace made up of members of the Hausa/Fulani ethnic sub division. 
+                The Hausa language is commonly spoken in the LGA while 
+                 the religion of Islam is extensively practiced in the area. Notable landmarks in Ungogo LGA include the Dausara Primary Health 
+                 Care Center. The postal code of the area is 700105.</p>
+                 <p>Ungogo LGA sits on a total area of 204 square kilometres and has an average temperature of 33 degrees centigrade. The LGA
+                   witnesses two major seasons which are the dry and the rainy seasons with average humidity levels in the area put at 28 percent.</p>
+          <h2 style="color: aliceblue;font-family:cursive;font-size: 170%; text-align: center;" >News & Updates</h2>
+          <hr>
+          <div class="row">
+  <div class="column">
+    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 130%;" >Chairman Of Ungogo L.G.A, Engr.Dr Abdullahi Garba Ramat sponsors
+       20 students for study to Lincoln University, Malaysia. </h2>
+    <img src="images/news1.JPG"
+    alt="news1"
+    style="height: 25%; width: 100%;"
+    <p> </p>
+    <p style="text-align: center;"> On Monday, 23 of January 2023 Engr. Dr. Abdullahi Garba Ramat  sponsors 20 students from Ungogo Local Government Area of
+       Kano State to Lincoln University, Malaysia to study different part of IT programmes, May Allah Bless 
+       their education, and be the source of their wealth. </p>
+  </div>
+  <div class="column">
+    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 130%;" >Chairman Ofsits on a total area of 204 
+      square kilometres</h2>
+   <img src="images/student (1).jpg" 
+      alt="student"
+      style="width: 100%; height: 25%;"
+      <p> </p>
+      <p>Iwan to tyr again</p>
+  </div>
+  <div class="column">
+    <h2 style="text-align: center;">Column</h2>
+    <p>try 3</p>
+  </div>
+          </div>
+  
+  <footer class="mt-4">
+    Copyright: Ramat scholar
+    </footer>
+    
+    </body>
+</html>
