@@ -6,7 +6,9 @@
         <style>
             body{
                 background-color: rgb(134, 230, 134);
+                
             }
+           
          
             ul {
       list-style-type: none;
@@ -16,7 +18,8 @@
       background-color: #333333;
     }
     * {box-sizing:border-box;}
-body {font-family: Verdana, sans-serif;}
+body {
+  font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -30,35 +33,31 @@ img {vertical-align: middle;}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) 
-  .column {
-    width: 100%;
-  }
-hr{
-  margin-top:0mm;
-}
+  
+{}
+
 .centered {
   position: absolute;
   top: 0%;
   left: 20%;
   font-size: 200%;
-  color: rgb(224, 191, 148);
+  color: rgb(148, 224, 177);
 }
 a:link, a:visited{
   color: #e20e0e;
-  color: aliceblue;
+  color: rgb(243, 255, 240);
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display:inline-block;
 }
 a:hover, a:active{
-  background-color: #21f132;
+  background-color: #f13413;
+  
 }
+  
 
 
-p img {
-  border: 5px solid #15c50f;
-}
 p.intro::first-letter{
    color: #e21818;
    font-size: 200%;
@@ -69,7 +68,8 @@ p.intro::first-letter{
   float: left;
   width: 33.33%;
   padding: 15px;
-  border: 3px solid rgb(87, 209, 93);
+  border:  3px  solid rgb(87, 209, 93);
+  border-radius: 5px;
 }
 
 /* Clear floats after the columns */
@@ -106,12 +106,13 @@ p.intro::first-letter{
   top: 0;
 }
 
+
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #990c0c;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -157,7 +158,32 @@ p.intro::first-letter{
       color: aliceblue;
       text-align: center;
     }
-   
+    * {
+				box-sizing: border-box;
+			}
+
+			.wrapper {
+				/* Don't worry about what flex means. */
+				/* It's simply here for demo purposes. */
+				display: flex;
+        background-color: #38582e;
+        padding: 20px;
+        color: aliceblue;
+        text-align: center;
+			}
+      .widget{
+        width: 100%;
+      }
+
+			
+      button{
+        background-color: #65c489;
+        color: #333333;
+        border-radius: 5px;
+      }
+      
+    
+    
 
 
         </style>
@@ -171,9 +197,8 @@ p.intro::first-letter{
             <li><a href="#home">Home</a></li>
              <li><a href="#Academics">History of UGG</a></li>
              <li><a href="About Ramat/index.html">History of Ramat</a></li>
-            <li><a href="#undergraduate">Indigine Registration</a></li>
-            <li><a href="#post graduate">Print Indigine Template</a></li>
-            <li><a href="admission2023">Scholarship</a></li>
+            <li><a href="indigene/index.html">Indigine Registration</a></li>
+            <li><a href="#admission2023">Scholarship</a></li>
             <li><a href="#undergraduate">Vacancy</a></li>
             <li><a href="#about">About</a></li>
           </ul>
@@ -182,8 +207,8 @@ p.intro::first-letter{
             <div class="mySlides fade">
               <img src="images/ramat.jpg" width="50" height="500" style="width:100%">
               <div style="height: 100%;"  class="top-left"><b><i>The Executive Chairman <br>Engr.Dr. Abdullahi Garba Ramat</i></b><br>
-                <a href="About Ramat/index.html"
-                >Click Here for more About Ramat</a>
+                <button><a href="About Ramat/index.html"
+                >Click for more About Ramat</a></button>
               </div>
 
             </div>
@@ -195,7 +220,6 @@ p.intro::first-letter{
             
             <div class="mySlides fade">
               <img src="images/scholars.JPG" width="50" height="500" style="width:100%">
-              <div style="height: 100%;" class="centered"><b><i>RAMAT SCHOLARS </b></i></div>
             </div>
             
             </div>
@@ -228,50 +252,84 @@ p.intro::first-letter{
               setTimeout(showSlides, 5000); // Change image every 6 minutes
             }
             </script>
-            <h3 style="color: aliceblue;font-family:cursive;font-size: 140%;"> WELCOME TO UNGOGO LOCAL GOVERNMENT AREA </h3>
-            <hr style="width: 16cm;height: 3px; float:left;">
-            <p><img src="images/student (2).jpg"
-              alt="map"
-              style="width: 700px; height: 300px;  float: right; margin-right: 15px;"><p class="intro"> Ungogo is one of the Local Government 
-                Area in kano state, Its Secretariat are in the town of Ungogo to the north of the city of Kano.It has an area of 204 km2 and 
-                a population of 369,657 at the 2006 census. <p> The area’s populace made up of members of the Hausa/Fulani ethnic sub division. 
-                The Hausa language is commonly spoken in the LGA while 
-                 the religion of Islam is extensively practiced in the area. Notable landmarks in Ungogo LGA include the Dausara Primary Health 
-                 Care Center. The postal code of the area is 700105.</p>
-                 <p>Ungogo LGA sits on a total area of 204 square kilometres and has an average temperature of 33 degrees centigrade. The LGA
-                   witnesses two major seasons which are the dry and the rainy seasons with average humidity levels in the area put at 28 percent.</p>
-          <h2 style="color: aliceblue;font-family:cursive;font-size: 170%; text-align: center;" >News & Updates</h2>
-          <hr>
-          <div class="row">
-  <div class="column">
-    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 130%;" >Chairman Of Ungogo L.G.A, Engr.Dr Abdullahi Garba Ramat sponsors
-       20 students for study to Lincoln University, Malaysia. </h2>
-    <img src="images/news1.JPG"
-    alt="news1"
-    style="height: 25%; width: 100%;"
-    <p> </p>
-    <p style="text-align: center;"> On Monday, 23 of January 2023 Engr. Dr. Abdullahi Garba Ramat  sponsors 20 students from Ungogo Local Government Area of
-       Kano State to Lincoln University, Malaysia to study different part of IT programmes, May Allah Bless 
-       their education, and be the source of their wealth. </p>
-  </div>
-  <div class="column">
-    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 130%;" >Chairman Ofsits on a total area of 204 
-      square kilometres</h2>
-   <img src="images/student (1).jpg" 
-      alt="student"
-      style="width: 100%; height: 25%;"
-      <p> </p>
-      <p>Iwan to tyr again</p>
-  </div>
-  <div class="column">
-    <h2 style="text-align: center;">Column</h2>
-    <p>try 3</p>
-  </div>
-          </div>
-  
-  <footer class="mt-4">
-    Copyright: Ramat scholar
-    </footer>
-    
+
+            <section>
+              <h3 style="color: white;font-family:'Times New Roman', Times, serif;font-size: 140%;"> WELCOME TO UNGOGO LOCAL GOVERNMENT AREA </h3>
+              <hr style="width: 100%;height: 3px; float:left;">
+              <p><img src="images/student (2).jpg" 
+                alt="map"
+                style="width: 50%; height: 300px;  float: right; padding: 10px; margin-right: 15px;"><p class="intro"> Ungogo is one of the Local Government
+                  Area in kano state, Its Secretariat are in the town of Ungogo to the north of the city of Kano.It has an area of 204 km2 and
+                  a population of 369,657 at the 2006 census. <p> The area’s populace made up of members of the Hausa/Fulani ethnic sub division.
+                  The Hausa language is commonly spoken in the LGA while
+                   the religion of Islam is extensively practiced in the area. Notable landmarks in Ungogo LGA include the Dausara Primary Health
+                   Care Center. The postal code of the area is 700105.</p>
+                   <p>Ungogo LGA sits on a total area of 204 square kilometres and has an average temperature of 33 degrees centigrade. The LGA
+                     witnesses two major seasons which are the dry and the rainy seasons with average humidity levels in the area put at 28 percent.</p>
+                        <h2 style="color: aliceblue;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 170%; text-align: center;" >News & Updates</h2>
+                        <hr>
+                        <div class="row">
+                <div class="column">
+                  <h2 style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 125%;" >Chairman Of Ungogo L.G.A, Engr.Dr Abdullahi Garba Ramat sponsors
+                     20 Students to study IT programmes at Lincoln University, Malaysia. </h2>
+                  <img src="images/news1.JPG"
+                  alt="news1"
+                  style="height: 15%; width: 100%;"
+                  <p> </p>
+                  <p style="text-align: center;"> On Monday, 23 of January 2023 Engr. Dr. Abdullahi Garba Ramat  sponsors 20 Students from Ungogo Local Government Area of
+                     Kano State to Lincoln University, Malaysia to study different part of IT programmes, May Allah Bless 
+                     their education, and be the source of their wealth.  <br> <button><a href="">Read More</a> </button></p>
+                </div>
+                <div class="column">
+                  <h2 style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 125%;" >Rummawa Primary School project has reached its 
+                    completion phase, Rummawa is a school that had generated wide media outrage within and beyond the state.</h2>
+                 <img src="images/student (1).jpg" 
+                    alt="student"
+                    style="width: 100%; height: 15%;"
+                    <p> </p>
+                    <p style="text-align: center;" >Before Chairman <b>Engr. Ramat</b> visited the town, Rummawa town had no Primary School, their kids only attended school in 
+                      neighboring town very far away from Rummawa, after Chairman Engr. Ramat visited and seen their situations, immediately descended 
+                      on the project, secured and released all funds necessary for its completion.<br> <button><a href="">Read More</a> </button></p>
+                </div>
+                <div class="column">
+                  <h2 style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 125%;" >Kano State Governor, Dr Abdullahi Umar
+                    Ganduje assents 2023 Budget worth N268 billions, which is increase of 23 billions from the previous budget. </h2>
+                    <img src="images/ganduje.JPG" style="width: 100%; height: 15%;" 
+                    alt="ganduje"
+                    <p>  </p>
+                  <p style="text-align: center;"> The Governor Dr. Abdullahi Umar Ganduje signed the budget during the weekly Executive council meeting held at the Government House,
+                    Executive Chamber. Shortly after the signing, Governor Ganduje expressed his happiness that the budget has been deliberated and finally 
+                    approved. <br> <button><a href="">Read More</a> </button></p>
+                </div>
+                </div>
+              </section>
+                <div class="wrapper">
+                  <div class="widget">
+                    <h2>CONTACT INFO</h2>
+                    <p>Earned this month</p>
+                    <p><img src="images/example/icon-arrow-green.svg" alt="Arrow green">+6.05% <span>than last month</span></p>
+                    <a href="#">Earnings <img src="images/example/icon-arrow-right.svg" alt="Arrow right"></a>
+                  </div>
+                  <div class="widget">
+                    <img src="images/example/icon-sales.svg" alt="Icon">
+                    <h2>22</h2>
+                    <p>New Sales</p>
+                    <p><img src="images/example/icon-arrow-green.svg" alt="Arrow green">+16.64% <span>than last month</span></p>
+                    <a href="#">Sales <img src="images/example/icon-arrow-right.svg" alt="Arrow right"></a>
+                  </div>
+                  <div class="widget">
+                    
+                    <h2>USEFUL LINKS</h2>
+                    <li><a href="kanostate.gov.ng"> Kano State Portal</a></li>
+                  
+                  </div>
+                </div>
+                      
+                      
+                
+                <footer class="mt-4">
+                Copyright&copy 2023 Unogogo | Powered by Ramat scholar
+                  </footer>
+            
     </body>
 </html>
