@@ -40,11 +40,9 @@ hr{
   color: rgb(224, 191, 148);
 
 }
-p img {
-  border: 5px solid #15c50f;
-}
+
 p.intro::first-letter{
-   color: #e21818;
+   color: #355ee6;
    font-size: 200%;
 
 }
@@ -61,27 +59,6 @@ p.intro::first-letter{
   display: table;
   clear: both;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #e20e0e;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -102,6 +79,48 @@ p.intro::first-letter{
     li a:hover {
       background-color: #f02828;
     }
+    footer{
+      padding: 10px;
+      background-color: #717171;
+      color: aliceblue;
+      text-align: center;
+    }
+    * {
+				box-sizing: border-box;
+			}
+    .wrapper {
+				/* Don't worry about what flex means. */
+				/* It's simply here for demo purposes. */
+				display: flex;
+        background-color: #38582e;
+        padding: 20px;
+        color: aliceblue;
+        text-align: center;
+        line-height: 1em;
+			}
+      .widget{
+        width: 100%;
+      }
+
+			
+      button{
+        background-color: #295dee;
+        color: #068610;
+        border-radius: 5px;
+        font-size: large;
+      }
+      a:link, a:visited{
+  color: #e20e0e;
+  color: rgb(243, 255, 240);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+}
+a:hover, a:active{
+  background-color: #f13413;
+  
+}
 
         </style>
     </head>
@@ -122,14 +141,16 @@ p.intro::first-letter{
           </ul>
     </head>
     <body>
-        <h4 style="color: rgb(19, 19, 18);font-family:cursive;font-size: 140%;text-align: center;color: aliceblue;"> ABOUT THE EXECUTIVE CHAIRMAN OF 
-            UNGOGO LOCAL GOVERNMENT, KANO STATE <br>ENGR. DR. ABDULLAHI GARBA RAMAT. </h4>
+        <h4 style="color: rgb(19, 19, 18);font-family:Georgia, 'Times New Roman', Times, serif;font-size: 170%;text-align: center;color: aliceblue;"> About The Executive
+          Chairman Of Ungogo Local Government, Kano State <br>Engr. Dr. Abdullahi Garba Ramat. </h4>
+            <hr>
             <div class="row">
                 <div class="column">
                   <img src="images/ramat.jpg" alt="ramat" width="100%; height="200%;>
-                  <h5 style="text-align: center; font-family:cursive; font-size: 120%;color:aliceblue" > 
+                  <h5 style="text-align: center; font-family:Arial, Helvetica, sans-serif; font-size: 120%;color:#355ee6" > 
                     ENGR. DR. ABDULLAHI GARBA RAMAT <br> THE EXECUTIVE CHAIRMAN </h5>
-                  <p><b>Engr.Dr Abdullahi Garba Ramat MNSE,AMB,</b><br> A Philanthropist, was born on July 27, 1985, and attended and graduated 
+                
+                  <p class="intro" ><b>Engr.Dr Abdullahi Garba Ramat MNSE,AMB,</b><br> A Philanthropist, was born on July 27, 1985, and attended and graduated 
                     from  Danrimi Primary School. He subsequently went on to Junior Secondary School at Government Technical College Ungogo.
                   He also went to Dawakin Tofa Science College to earn his Secondary School Certificate. In his desire for knowledge, he enrolled 
                 in an IJMB program at Kano College of Art, Science and Remedial Studies (CAS).</p>
@@ -170,6 +191,38 @@ p.intro::first-letter{
                   saddled with responsibility of street lightening and beautification of metropolis under the newly KANO STATE 
                   METROPOLITAN AGENCY</p>
                   <p>Engr. Ramat is currently, he is the Executive Chairman of Ungogo Local Government, Kano State.</p>
+                  </div>
+                </div>
+                  <div class="wrapper">
+                    <div class="widget">
+                      <h2>CONTACT INFO</h2>
+                      <p style="text-align: left; font-size: 80%;" ><img src="images//new map.svg" align="left" width="10%" alt="logo">292 Gayawa Kano old Transfomer Ungogo Local Government Kano, 
+                        700701, Ungogo, Kano.
+                         
+                      <p style="text-align: left; font-size: 100%;" ><img src="images/EMAIL.png" align="center" width="10%" alt="icon"> Ungogolga@gmail.com</p>
+                      <p style="text-align: left; font-size: 100%;" ><img src="images/phone.png" align="left" width="10%" alt="icon"> 09064809729 <br> 08032985466</p>
+                    </div>
+                    <div class="widget">
+                      <h2>CONNECT WITH US</h2>
+                      <a href="https://m.facebook.com/112929057504486/." target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
+                      <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="facebook"></a>
+                      <a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="facebook"></a>
+                    </div>
+                    <div class="widget">
+                      
+                      <h2>USEFUL LINKS</h2>
+                      <li><a href="https://kanostate.gov.ng" target="_blank"> Kano State Portal</a></li>
+                      <li><a href="https://kanoemirate.org" target="_blank"> Kano Emirate</a></li>
+                      <li><a href="https://npf.gov.ng" target="_blank"> Nigerian Police Force</a></li>
+                    
+                    </div>
+                  </div>
+                        
+                        
+                  
+                  <footer class="mt-4">
+                  Copyright&copy 2023 Unogogo | Powered by Ramat scholar
+                    </footer>
     </body>
     
 </html>
