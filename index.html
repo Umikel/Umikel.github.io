@@ -139,6 +139,13 @@ p.intro::first-letter{
 @media only screen and (max-width: 300px) {
   .text {font-size: 51px}
 }
+/* For mobile phones: */
+[class*="column"] {
+  width: 100%;}
+  @media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .column {width: 33.33%;}
+  .col-2 {width: 16.66%;}
     
     li {
       float: left;
@@ -246,26 +253,26 @@ p.intro::first-letter{
             </div>
             
             <script>
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+              let slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
               }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 5000); // Change image every 6 minutes
-            }
-            </script>
+              </script>
 
             <section>
               <div class="form">
