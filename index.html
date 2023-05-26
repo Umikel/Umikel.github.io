@@ -13,7 +13,6 @@
                 background-color: rgb(134, 230, 134);
                 
             }
-           
          
             ul {
       list-style-type: none;
@@ -61,8 +60,6 @@ a:hover, a:active{
   background-color: #f13413;
   
 }
-  
-
 
 p.intro::first-letter{
    color: #e21818;
@@ -72,7 +69,7 @@ p.intro::first-letter{
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 100%;
   padding: 15px;
   border:  3px  solid rgb(87, 209, 93);
   border-radius: 5px;
@@ -139,36 +136,8 @@ p.intro::first-letter{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and(max-width: 350px) {
-  body{
 
-  .text {font-size: 120%}
-  }
-}
-@media only screen and (max-width:350px){
-.column {width: 30%;}}
-@media only screen and (max-width: 350px) {
-  /* For mobile phones: */
-.column{
-  width: 100%;}
-  .wrapper{
-  width: 100%;}
-  .ni{
-  width: 100%;}
-  .ni{
-  font-size: 100%;}
 
-}
-@media only screen and (min-width: 601px) {
-  div.ni {
-    font-size: 80px;
-  }
-
-  @media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .column {width: 33.33%;}
-  .col-2 {width: 16.66%;}
     
     li {
       float: left;
@@ -217,17 +186,77 @@ p.intro::first-letter{
         font-size: large;
       }
       .form{
-        height: 500px;
+        height: 800px;
+      }
+      .form p:img{
+        width: 100%;
+      }
+      .none{
+        display: none;
+      }
+      #ni1{
+        font-size: 80%;
+      }
+      .top-left{
+        height: 100%;
+         padding-top: 50px; 
+        padding-left: 30px;
+        font-size: 100%;
+      }
+      
+      .mySlides img{
+       height: 300px;
+      width: 100%;
+    }
+      @media only screen and (min-width:768px){
+        .none{
+          display: block;
+        }
+        .ni {
+          font-size: 300%;
+        }
+        #ni1{
+          font-size: 200%;
+        }
+        .form{
+        height: 400px;
         
       }
+        /* Slideshow container */
+      .slideshow-container {
+      max-width: 10000px;
+      position: relative;
+    margin:auto;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border:  3px  solid rgb(87, 209, 93);
+  border-radius: 5px;
+}
+.top-left{
+        height: 100%;
+         padding-top: 50px; 
+        padding-left: 30px;
+        font-size: 200%;
+
+      }
+      .mySlides img{
+       height: 500px;
+      width: 100%;
+    }
+    }
 
         </style>
     <body>
       <div class="ni">
       <td style="width: 5550px;">
-        <h1 style="text-align:center;font-size:300%;text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); color:hsl(240, 33%, 96%);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UNGOGO LOCAL GOVERNMENT AREA PORTAL</h1>
-        <h1 style="text-align: center; color: rgb(245, 246, 248); font-size: 150%; font-family:Cambria, Cochin, Georgia, Times,;"><marquee> Welcome To The Ungogo Local Goverment Official Website.</marquee></h1>
+        <h1 style="text-align:center;font-size:120%;text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); color:hsl(240, 33%, 96%);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UNGOGO LOCAL GOVERNMENT AREA PORTAL</h1>
+      </div>
+        <p id="ni1" style="text-align: center; color: rgb(245, 246, 248); font-family:Cambria, Cochin, Georgia, Times,;"><marquee> Welcome To The Ungogo Local Goverment Official Website.</marquee></p>
       </td>
+      <div class="none">
         <ul>
             <li><a class="active" href="#home">Home</a></li>
              <li><a href="history of ungg/index.html">History of UGG</a></li>
@@ -237,11 +266,12 @@ p.intro::first-letter{
             <li><a href="#undergraduate">Vacancy</a></li>
             <li><a href="#about">About</a></li>
           </ul>
+        </div>
           <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <img src="images/ramat.jpg" width="50" height="500" style="width:100%">
-              <div style= "height: 100%; padding-top: 50px; padding-left: 30px;"  class="top-left"><b><i>The Executive Chairman <br>Engr.Dr. Abdullahi Garba Ramat</i></b><br>
+              <img src="images/ramat.jpg" >
+              <div class="top-left"><b><i>The Executive Chairman <br>Engr.Dr. Abdullahi Garba Ramat</i></b><br>
                 <button><a href="About Ramat/index.html"
                 >Click for More About Ramat</a></button>
               </div>
