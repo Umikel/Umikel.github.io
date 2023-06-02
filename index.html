@@ -74,6 +74,7 @@ p.intro::first-letter{
   padding: 15px;
   border:  3px  solid rgb(87, 209, 93);
   border-radius: 5px;
+  margin-top: 0;
 }
 
 /* Clear floats after the columns */
@@ -260,12 +261,12 @@ p.intro::first-letter{
 }
 .top-left{
         height: 100%;
-         padding-top: 10px; 
+         padding-top: 50px; 
         padding-left: 30px;
         font-size: 200%;
       background: none;
       position: none;
-      top: none;
+      top: 20px;
       width: none;
       }
       .mySlides img{
@@ -299,6 +300,7 @@ a:hover, a:active{
     #bi{
   font-size: 100%;
   }
+}
 
         </style>
     <body>
@@ -366,7 +368,7 @@ a:hover, a:active{
                 }
                 slides[slideIndex-1].style.display = "block";  
                 dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
               }
               </script>
 
