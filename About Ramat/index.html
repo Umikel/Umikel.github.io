@@ -1,138 +1,163 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About Ramat</title>
-        <link rel="icon" href="../images/logo 1.jfif">
-        <style>
-            body{
-                background-color: rgb(134, 230, 134);
-            }
-         
-            ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333333;
-    }
-    * {box-sizing:border-box;}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Ramat</title>
+  <link rel="icon" href="../images/logo 1.jfif">
+  <style>
+      body{
+          background-color: rgb(134, 230, 134);
+      }
+   
+      ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333333;
+}
+* {box-sizing:border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-  
- 
-}
+
 hr{
-  margin-top:0mm;
+margin-top:0mm;
 }
 
 .centered {
-  position: absolute;
-  top: 0%;
-  left: 20%;
-  font-size: 200%;
-  color: rgb(224, 191, 148);
+position: absolute;
+top: 0%;
+left: 20%;
+font-size: 200%;
+color: rgb(224, 191, 148);
 
 }
 
 p.intro::first-letter{
-   color: #355ee6;
-   font-size: 200%;
+color: #355ee6;
+font-size: 200%;
 
 }
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
+float: left;
+width: 100%;
+padding: 15px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.text {font-size: 11px}
 }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      text-decoration: none;
-    }
-    li a:hover {
-      background-color: #f02828;
-      transform:skewX(-15deg)
-    }
-    footer{
-      padding: 20px;
-      background-color: #717171;
-      color: aliceblue;
-      text-align: center;
-    }
-    * {
-				box-sizing: border-box;
-			}
-    .wrapper {
-				/* Don't worry about what flex means. */
-				/* It's simply here for demo purposes. */
-				display: flex;
-        background-color: #38582e;
-        padding: 20px;
-        color: aliceblue;
-        text-align: center;
-        line-height: 1em;
-			}
-      .widget{
-        width: 100%;
-      }
 
-			
-      button{
-        background-color: #295dee;
-        color: #068610;
-        border-radius: 5px;
-        font-size: large;
-      }
-      a:link, a:visited{
+li {
+float: left;
+}
+
+a:link, a:visited{
   color: #e20e0e;
   color: rgb(243, 255, 240);
-  padding: 14px 25px;
+  padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display:inline-block;
+  font-size: 50%;
+}
+footer{
+padding: 20px;
+background-color: #717171;
+color: aliceblue;
+text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  /* Don't worry about what flex means. */
+  /* It's simply here for demo purposes. */
+  background-color: #38582e;
+  padding: 20px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 1em;
+}
+.widget{
+  width: 100%;
+}
+
+
+button{
+  background-color: #295dee;
+  color: #068610;
+  border-radius: 5px;
+  font-size: large;
+}
+
+a:hover, a:active{
+background-color: #f13413;
+
+}
+.active {
+background-color: #1a0dd3;
+}
+h4 {
+  display: none;
+}
+
+
+@media only screen and (min-width:768px){
+  .ni {
+          font-size: 250%;
+        }
+        .column {
+float: left;
+width: 33.33%;
+padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.wrapper{
+  display: flex;
+}
+a:link, a:visited{
+  color: #e20e0e;
+  color: rgb(243, 255, 240);
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 110%;
 }
 a:hover, a:active{
   background-color: #f13413;
-  
 }
-.active {
-  background-color: #1a0dd3;
-}
-
-        </style>
-    </head>
+      }
+  </style>
+</head>
+        
     <body>
+      <div class="ni">
       <td style="width: 5550px;">
-        <h1 style="text-align:center;font-size:300%;text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); 
+        <h1 style="text-align:center;font-size:120%;text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); 
         color:hsl(240, 33%, 96%);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UNGOGO LOCAL 
           GOVERNMENT AREA PORTAL</h1>
+        </div>
       </td>
         <ul>
             <li><a href="../index.html">Home</a></li>
