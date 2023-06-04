@@ -94,7 +94,7 @@ a:hover, a:active{
   
 }
 section{
-  float: left;
+  margin-top: -20px;
   width: 100%;
   height: 2200px;
   background-color:#7cc085;
@@ -131,12 +131,12 @@ section{
 }
 
 
-.row:after {
-  
-  display: table;
-  clear: both;
-  
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .kee{font-size: 120%; 
   font-family: Georgia, 'Times New Roman', Times, serif
       }
@@ -155,6 +155,7 @@ section{
     color:#ecf7f5; 
     font-size: 150%; 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
 
   }
 
@@ -178,7 +179,7 @@ section{
 .column {
   float: left;
   width: 33.33%;
-  padding: 15px;
+
 }
 section{
   float: left;
@@ -279,52 +280,55 @@ section h2{
                 Ungogo Local Government Scholarships is exclusively meant for only Indigenes of the Local government whose parents are, or whose Father is,
                of Kano,Ungogo Origin. 
               </p>  
-              <div class="row">
-                <div class="column">
-                 <center> <img src="images/eligible.PNG" alt="logo" width="30%" align="center"></center>
-                  <h2 style="color: #ddddd6; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Eligibility For Scholarships</h2>
-                  <ol style="font-size: 120%; font-family:Arial, Helvetica, sans-serif; line-height: 3rem;">
-                    <li style="line-height: 1.3rem;">Applicant must be Indigene of Ungogo Local Government Area.</li>
-                    <li>Applicant must 16 years to above.</li>
-                    <li style="line-height: 1.3rem;">Applicant must passed 5 Subject in their SSCE Result Include English and Maths.</li>
-                  </ol>
-              </div>
+      <div class="row">
+        <div class="column">
+          <center> <img src="images/eligible.PNG" alt="logo" width="30%" align="center"></center>
+          <h2 style="color: #ddddd6; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Eligibility For Scholarships</h2>
+          <ol style="font-size: 120%; font-family:Arial, Helvetica, sans-serif; line-height: 3rem;">
+            <li style="line-height: 1.3rem;">Applicant must be Indigene of Ungogo Local Government Area.</li>
+            <li>Applicant must 16 years to above.</li>
+            <li style="line-height: 1.3rem;">Applicant must passed 5 Subject in their SSCE Result Include English and Maths.</li>
+          </ol>
+      </div>
       
           
               
-                <div class="column">
-                  <center><img src="images/document.svg" alt="" width="30%" align="centre" ></center>
-                  <h2 style="color: #ddddd6; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Requirement</h2>
-                  <ol style="font-size: 110%; font-family:Arial, Helvetica, sans-serif; line-height: 2rem;">
-                    <li>Primary School Certificate.</li>
-                    <li>O level Result (SSCE) E.g Neco, WAEC</li>
-                    <li>Date Of Birth / Declaration Of Age </li>
-                    <li>Indigene Certificate</li>
-                    <li>National Identity Number (NIN)</li>
-                    <li>Passport Photograph</li>
-                  </ol>
-                </div>
-              
-          
-                <div class="column">
-                  <center><img src="images/apply.PNG" alt="logo" width="30%"></center>
-                  <h2 style="color: #ddddd6; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">How To Apply</h2>
-                  <ol style="font-size: 110%; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 2.5rem; color: #3a121a;">
-                    <li>Click on <strong>Purchase Pin </strong>Online.</li>
-                    <li style="line-height: 1.3rem;">Enter your Name, Email, Phone Number and Click <strong>'Pay Now' </strong> 
-                      and Make a payment fee of Three Thousand Naira <strong></strong> Only using Master/Visa Card or Throught Bank Transfer.</li><br>
-                      <li>After Sucessfull Payment the Pin Number.</li>
-                      <li> The <strong>PIN</strong> will be sent to your Email.</li>
-                      <li style="line-height: 1.3rem;">Then back to the Scholarship portal and click <strong>Apply</strong></li>
-                      <li>Fill the form and Click <strong>Submit.</strong></li>
-                  </ol>
-                  <center><button id="done"><a id="rest" href="#">Purchase PIN</a></button></center>
-                </div>
-
-              </div>
-            </div>
+        <div class="column">
+          <center><img src="images/document.svg" alt="" width="30%" align="centre" ></center>
+          <h2 style="color: #ddddd6; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Requirement</h2>
+          <ol style="font-size: 110%; font-family:Arial, Helvetica, sans-serif; line-height: 2rem;">
+            <li>Primary School Certificate.</li>
+            <li>O level Result (SSCE) E.g Neco, WAEC</li>
+            <li>Date Of Birth / Declaration Of Age </li>
+            <li>Indigene Certificate</li>
+            <li>National Identity Number (NIN)</li>
+            <li>Passport Photograph</li>
+          </ol>
+        </div>
             
-          </section>
+              
+              
+                
+          
+      <div class="column">
+        <center><img src="images/apply.PNG" alt="logo" width="30%"></center>
+        <h2 style="color: #ddddd6; text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">How To Apply</h2>
+        <ol style="font-size: 110%; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 2.5rem; color: #3a121a;">
+          <li>Click on <strong>Purchase Pin </strong>Online.</li>
+          <li style="line-height: 1.3rem;">Enter your Name, Email, Phone Number and Click <strong>'Pay Now' </strong> 
+            and Make a payment fee of Three Thousand Naira <strong></strong> Only using Master/Visa Card or Throught Bank Transfer.</li><br>
+            <li>After Sucessfull Payment the Pin Number.</li>
+            <li> The <strong>PIN</strong> will be sent to your Email.</li>
+            <li style="line-height: 1.3rem;">Then back to the Scholarship portal and click <strong>Apply</strong></li>
+            <li>Fill the form and Click <strong>Submit.</strong></li>
+        </ol>
+        <center><button id="done"><a id="rest" href="#">Purchase PIN</a></button></center>
+      </div>
+
+    </div>
+              </section>
+            
+        
   
 
 
