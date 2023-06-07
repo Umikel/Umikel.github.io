@@ -190,15 +190,13 @@ li:hover {
     filter: blur(2px);
   }
   .three{
-    width: 100%;
+    width: 90%;
     height: 300px;
     text-align: center;
-    margin-top: 30px;
     font-family:Comic Sans MS;
     font-size: 60%;
-    color: rgb(6, 35, 59);
-    
-    
+    color: rgb(6, 35, 59); 
+    padding: 15px;
   }
   .three img{
     width: 40%;
@@ -211,8 +209,8 @@ li:hover {
     width: 150px;
   }
   #k{
-    font-size: 150%;
    font-family: 'Times New Roman', Times, serif;
+   font-size: 110%;
   }
   #no{
     width: 5%;
@@ -222,6 +220,10 @@ li:hover {
   @media only screen and (min-width:768px){
     #no{
       width: 2%;
+    }
+    #k{
+      font-size: 170%;
+     font-family: Bahnschrift Light;
     }
     .no{
       width: 98.5%;
@@ -244,7 +246,7 @@ li:hover {
       width: 15%;
     }
     .three{
-      width: 33.33%;
+      width: 30.33%;
       height: 300px;
       float: left;
       text-align: center;
@@ -252,6 +254,7 @@ li:hover {
       font-family:Comic Sans MS;
       font-size: 60%;
       color: rgb(6, 35, 59);
+      padding: 15px;
       
       
     }
