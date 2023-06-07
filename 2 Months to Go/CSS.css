@@ -11,12 +11,13 @@ ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 60px;
   
 }
 #cap{
   margin-left: 10px;
   margin-top: 5px;
+  text-align: center;
   }
 
 
@@ -33,6 +34,7 @@ ul{
 .first li{
   float: left;
   text-align: center;
+  padding-right: 5px;
 }
 .no img {
  margin-right: 30px;
@@ -65,8 +67,8 @@ li a {
   display: block;
   color: white;
   text-decoration: none;
-  padding: 4px 4px 4px 4px;
-  font-size: 10px;
+  padding: 9px 0px 4px 5px;
+  font-size: 14px;
   font-family: Arial;
  
 }
@@ -85,7 +87,7 @@ li:hover {
 }
 .head img{
   border-radius: 50px;
-  width: 8%;
+  width: 15%;
   
   }
   
@@ -125,11 +127,13 @@ li:hover {
     animation-name: df;
     animation-duration: 2s;
     animation-fill-mode:forwards;
+    font-size: 130%;
+    
   }
   @keyframes df{
     from{left:10px; top: 30px;}
-    to{top:200px;}
-    to{left: 800px;}
+    to{top:160px;}
+    to{left: 115px;}
     
       
   }
