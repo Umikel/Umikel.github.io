@@ -1,474 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNGOGO LOCAL GOVERNMENT AREA</title>
-  <link rel="icon" type="image/x-icon" href="images/logo 1.jfif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo 1.jfif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sytles.css">
+    <title>Ungogo Local Government</title>
 </head>
 <body>
-        <style>
-            body{
-                background-color: rgb(134, 230, 134);
-                
-            }
-         
-            ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333333;
-    }
-    * {box-sizing:border-box;}
-body {
-
-  font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 10000px;
-  position: relative;
-  margin:auto;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) 
-  
-{}
-
-.centered {
-  position: absolute;
-  top: 0%;
-  left: 20%;
-  font-size: 200%;
-  color: rgb(148, 224, 177);
-}
-a:link, a:visited{
-  color: #e20e0e;
-  color: rgb(243, 255, 240);
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display:inline-block;
-  font-size: 50%;
-}
-a:hover, a:active{
-  background-color: #f13413;
-  
-}
-
-p.intro::first-letter{
-   color: #e21818;
-   font-size: 200%;
-
-}
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 100%;
-  padding: 15px;
-  border:  3px  solid rgb(87, 209, 93);
-  border-radius: 5px;
-  margin-top: 0;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  font-size: 200%;
-  color: #2317c7;
-  
-}
-/* Caption text */
-.text {
-  color: rgb(240, 15, 15);
-  font-size: 100%;
-  padding: 100px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 200%;
-  text-align: top-center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #e20e0e;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #990c0c;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #1a0dd3;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-#bi{
-  font-size: 150%;
-}
-
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 5px;
-      text-decoration: none;
-    }
-    li a:hover {
-      background-color: #f02828;
- 
-    }
-    footer{
-      padding: 20px;
-      background-color: #717171;
-      color: aliceblue;
-      text-align: center;
-    }
-    * {
-				box-sizing: border-box;
-			}
-
-			.wrapper {
-				/* Don't worry about what flex means. */
-				/* It's simply here for demo purposes. */
-        width: 100%;
-        background-color: #38582e;
-        padding: 20px;
-        color: aliceblue;
-        text-align: center;
-        line-height: 1em;
-			}
-      .widget{
-        width: 100%;
-      }
-
-			
-      button{
-        background-color: #295dee;
-        color: #068610;
-        border-radius: 5px;
-        font-size: large;
-      }
-      .form{
-        height: 580px;
-        margin-left: 20px;
-      }
-      .form p:img{
-        width: 100%;
-      }
-      .none{
-        display: block;
-      }
-      #ni1{
-        font-size: 80%;
-      }
-      .top-left{
-         padding-top: 10px; 
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 100%;
-        position: absolute;
-        background:rgba(0, 0, 0, 0.2);
-        width: 90%;
-        top: 200px;
-        text-align: center;
-        color: black;
-        border-radius: 8px;
-
-      }
-      
-      .mySlides img{
-       height: 300px;
-      width: 100%;
-    }
-    .res{
-      color: white;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 130%;
-      text-align: center;
-      margin-top: 0px 0px 0px 0px;
-    }
-    .form img{
-      display: none;
-    }
-    hr{
-      display: block;
-    }
-  
-      @media only screen and (min-width:768px){
-        .none{
-          display: block;
-        }
-        .ni {
-          font-size: 250%;
-        }
-        #ni1{
-          font-size: 150%;
-          margin-top: 0;
-          margin-bottom: 0;
-        }
-        .form{
-        height: 400px;
+    <div class="container-fluid p-1 bg-primary" id="spo">
+        <p class="mt-0 text-light "><strong>contact us:</strong> 
+        <a href="mailto:ungogolga@gmail.com"><img src="images/EMAIL.png" class="img-fluid" alt=""></a>
         
-      }
-        /* Slideshow container */
-      .slideshow-container {
-      max-width: 10000px;
-      position: relative;
-    margin:auto;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-  border:  3px  solid rgb(87, 209, 93);
-  border-radius: 5px;
-}
-.top-left{
-        height: 100%;
-         padding-top: 50px; 
-        padding-left: 30px;
-        font-size: 200%;
-      background: none;
-      position: none;
-      top: 20px;
-      width: none;
-      text-align: left;
-      }
-      .mySlides img{
-       height: 500px;
-      width: 100%;
-    }
-    .res{
-      font-size: 200%;
-    }
-    .wrapper {
-      display: flex;
-    }
-    .form img{
-      display: block}
-      hr{
-        display: block;
-      }
-      a:link, a:visited{
-  color: #e20e0e;
-  color: rgb(243, 255, 240);
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display:inline-block;
-  font-size: 110%;
-}
-a:hover, a:active{
-  background-color: #f13413;
-
-    }
-    #bi{
-  font-size: 100%;
-  }
-}
-
-        </style>
-    <body>
-      <div class="ni">
-      <td style="width: 5550px;">
-        <h1 style="text-align:center;font-size:120%;text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); color:hsl(240, 33%, 96%);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UNGOGO LOCAL GOVERNMENT AREA PORTAL</h1>
+    </p>
+    </div>
+    <div class="container-fluid text-center bg-light p-2 text-primary">
+        
+        <h1 class="go1">Ungogo Local Government Portal</h1>
+        <marquee behavior="" direction="">Welcome To The Ungogo Local Goverment Official Website.</marquee>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow mb-1 sticky-top">
+          <div class="container">
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page" id="active" ><strong>Home </strong><span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="The chairman/chairman.html" aria-current="page" id="nod"><strong>The Chairman</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nod" href="indigene/indigene.html"><strong>Indigene</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nod" href="#"><strong>Scholarship</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nod" href="news/news.html"><strong>News & Event</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nod" href="#"><strong>Projects</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nod" href="Staff/Staff.html"><strong>Staff Portal</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="nod" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>About us</strong></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" id="nod" href="#">History of Ugg</a>
+                            <a class="dropdown-item" id="nod" href="#">wards in ungogo</a>
+                            <a class="dropdown-item" id="nod" href="#">Management Staff</a>
+                        </div>
+                    </li>
+                </ul>
+                <img src="images/logo 1.jfif" class="img-fluid" width="60px"  height="50" class="d-inline-block align-text-top">
+            </div>
       </div>
-        <p id="ni1" style="text-align: center; color: rgb(245, 246, 248); font-family:Cambria, Cochin, Georgia, Times,;"><marquee> Welcome To The Ungogo Local Goverment Official Website.</marquee></p>
-      </td>
-      <div class="none">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-             <li><a href="history of ungg/index.html">History of UGG</a></li>
-             <li><a href="About Ramat/index.html">History of Ramat</a></li>
-            <li><a href="indigene/index.html">Indigene Registration</a></li>
-            <li><a href="scholarship/Index.html">Scholarship</a></li>
-            <li><a href="./2 Months to Go/index.html">Vacancy</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-        </div>
-          <div class="slideshow-container">
+    </nav>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>The Chairman</h1>
+                    <p>Enr. ramat</p>
+                </div>
+                <img src="images/ramat.jpg" class="w-100 d-block tales" alt="First slide" >
 
-            <div class="mySlides fade">
-              <img src="images/ramat.jpg" >
-              <div class="top-left"><b><i>The Executive Chairman <br>Engr.Dr. Abdullahi Garba Ramat</i></b><br>
-                <button><a href="About Ramat/index.html"
-                >More About Ramat</a></button>
-              </div>
-
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="images/ungogo logo.jpg" width="50" height="500" style="width:100%">
-              
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="images/scholars.JPG" width="50" height="500" style="width:100%">
-            </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            
-            <script>
-              let slideIndex = 0;
-              showSlides();
-              
-              function showSlides() {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}    
-                for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 5000); // Change image every 2 seconds
-              }
-              </script>
-
-            <section>
-              <div class="form">
-                <div class="res">
-              <h3> Welcome To Ungogo Local Government Area </h3>
-            </div>
-              <hr style="width: 100%;height: 3px; float:left;">
-              <p><img src="images/student (2).jpg" 
-                alt="map"
-                style="width: 50%; height: 300px;  float: right; padding: 10px; margin-right: 15px;"><p class="intro"> 
-                  Ungogo is one of the Local Government
-                  Area in kano state, Its Secretariat are in the town of Ungogo to the north of the city of Kano.It has an area of 204 km2 and
-                  a population of 369,657 at the 2006 census.
-                  <p>
-                     The area’s populace made up of members of the Hausa/Fulani ethnic sub division.
-                     The Hausa language is commonly spoken in the LGA while
-                     the religion of Islam is extensively practiced in the area. Notable landmarks in Ungogo LGA include the Dausara Primary Health
-                     Care Center. The postal code of the area is 700105.
-                  </p>
-                   <p>
-                     Ungogo LGA sits on a total area of 204 square kilometres and has an average temperature of 33 degrees centigrade. The LGA
-                     witnesses two major seasons which are the dry and the rainy seasons with average humidity levels in the area put at 28 percent.
-                    </p>
-                  </div>
-                        <h2 style="color: aliceblue;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 200%; text-align: center;" >News & Updates</h2>
-                        <hr>
-                        <div class="row">
-                <div class="column">
-                  <h2 style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 125%;" >Chairman Of Ungogo L.G.A, Engr.Dr Abdullahi Garba Ramat sponsors
-                     20 Students to study IT programmes at Lincoln University, Malaysia. </h2>
-                  <img src="images/news1.JPG"
-                  alt="news1"
-                  style="height: 15%; width: 100%;"
-                  <p> </p>
-                  <p style="text-align: center;"> On Monday, 23 of January 2023 Engr. Dr. Abdullahi Garba Ramat  sponsors 20 Students from Ungogo Local Government Area of
-                     Kano State to Lincoln University, Malaysia to study different part of IT programmes, May Allah Bless 
-                     their education, and be the source of their wealth.  <br> <button id="bi"><a href="news.html">Read More</a> </button></p>
-                </div>
-                <div class="column">
-                  <h2 style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 125%;" >Rummawa Primary School project has reached its 
-                    completion phase, Rummawa is a school that had generated wide media outrage within and beyond the state.</h2>
-                 <img src="images/student (1).jpg" 
-                    alt="student"
-                    style="width: 100%; height: 15%;"
-                    <p> </p>
-                    <p style="text-align: center;" >Before Chairman <b>Engr. Ramat</b> visited the town, Rummawa town had no Primary School, their kids only attended school in 
-                      neighboring town very far away from Rummawa, after Chairman Engr. Ramat visited and seen their situations, immediately descended 
-                      on the project, secured and released all funds necessary for its completion.<br> <button id="bi"><a href="news.html">Read More</a> </button></p>
-                </div>
-                <div class="column">
-                  <h2 style="text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 125%;" >Kano State Governor, Dr Abdullahi Umar
-                    Ganduje assents 2023 Budget worth N268 billions, which is increase of 23 billions from the previous budget. </h2>
-                    <img src="images/ganduje.JPG" style="width: 100%; height: 15%;" 
-                    alt="ganduje"
-                    <p>  </p>
-                  <p style="text-align: center;"> The Governor Dr. Abdullahi Umar Ganduje signed the budget during the weekly Executive council meeting held at the Government House,
-                    Executive Chamber. Shortly after the signing, Governor Ganduje expressed his happiness that the budget has been deliberated and finally 
-                    approved. <br> <button id="bi" ><a href="news.html">Read More</a> </button></p>
-                </div>
-                </div>
-              </section>
-                <div class="wrapper">
-                  <div class="widget">
-                    <h2>CONTACT INFO</h2>
-                    <a href="umarmikel.com" target="_blank" style="text-align: left; font-size: 80%;" ><img src="images//new map.svg"align="left" width="10%" alt="logo">292 Gayawa Kano 
-                      old Transfomer Ungogo Local Government Kano, 
-                      700701, Ungogo, Kano State Nigeria.</a>
-                       
-                    <p style="text-align: left; font-size: 100%;" ><img src="images/EMAIL.png" align="center" width="10%" alt="icon"> Ungogolga@gmail.com</p>
-                    <p style="text-align: left; font-size: 100%;" ><img src="images/phone.png" align="left" width="10%" alt="icon"> 09064809729 <br> 08032985466</p>
-                  </div>
-                  <div class="widget">
-                    <h2>CONNECT WITH US</h2>
-                    <a href="https://m.facebook.com/112929057504486/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="facebook"></a>
-                    <a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="facebook"></a>
-                  </div>
-                  <div class="widget">
-                    
-                    <h2>USEFUL LINKS</h2>
-                    <li><a href="https://kanostate.gov.ng" target="_blank"> Kano State Portal</a></li>
-                    <li><a href="https://kanoemirate.org" target="_blank"> Kano Emirate</a></li>
-                    <li><a href="https://npf.gov.ng" target="_blank"> Nigerian Police Force</a></li>
-                  
-                  </div>
-                </div>
-                      
-                      
                 
-                <footer class="mt-4">
-                Copyright&copy 2023 Unogogo | Powered by Ramat scholar
-                  </footer>
-     </div>       
-    </body>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/ungogo logo.jpg" class="w-100 d-block tales" alt="Second slide">
+                
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/scholars.JPG" class="w-100 d-block tales" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="row justify-content-center align-items-center text-center p-3 g-0">
+        <div class="col-sm-3 rounded p-3">
+            <a href="indigene/indigene.html"><img src="images/certificate.jpg" class="img-fluid" id="done2" alt=""></a>
+            <div class="container p-2">
+                <h4>Indigene </h4>
+            </div>
+            
+            <a id="lo" class="btn btn-primary" href="indigene/indigene.html">Apply</a>
+        </div>
+        <div class="col-sm-3 rounded p-3">
+              <a href=""><img src="images/scholars.JPG" class="img-fluid" id="done2"></a>       
+              <div class="container p-2">
+                <h4>Scholarship</h4>
+            </div>
+                <a id="lo" class="btn btn-primary" href="#">Apply</a>
+        </div>
+        <div class="col-sm-3 rounded p-3">
+            <a href=""><img src="images/indigine.jpg" class="img-fluid" id="done2" alt=""></a>
+            <div class="container p-2">
+                <h4>Vacancy </h4>
+            </div>
+            <a id="lo" class="btn btn-primary" href="#">Apply</a>
+        </div>
+    </div>
+    <div class="container-fluid text-center text-primary rounded p-4">
+        <h2>Welcome To Ungogo</h2>
+        <hr>
+    </div>
+   <div class="row justify-content-center align-items-center bg-light g-0 shadow">
+    <div class="col-sm-5">
+            <img src="images/student (1).jpg" class="img-fluid p-5" alt="">
+    </div>
+    <div class="col-sm-7 bg-light text-break p-4 ">
+        <p  class="go">Ungogo is one of the Local Government Area in kano state, Its Secretariat are in the town of Ungogo to the 
+            north of the city of Kano.It has an area of 204 km2 and a population of 369,657 at the 2006 census.
+            The area’s populace made up of members of the Hausa/Fulani ethnic sub division. The Hausa language is 
+            commonly spoken in the LGA while the religion of Islam is extensively practiced in the area.</p> <p class="go"> Notable 
+            landmarks in Ungogo LGA include the Dausara Primary Health Care Center. The postal code of the area is 700105.
+            Ungogo LGA sits on a total area of 204 square kilometres and has an average temperature of 33 degrees centigrade. 
+            The LGA witnesses two major seasons which are the dry and the rainy seasons with average humidity levels in the
+             area put at 28 percent.</p>
+    </div>
+   </div>
+   <div class="container-fluid text-center text-primary rounded p-4">
+    <h2>News & Updates</h2>
+    <hr>
+</div>
+<div class="row justify-content-center  text-center g-0 bg-light shadow">
+    <div class="col-sm-3 p-4">
+        <h5 id="done">Chairman Engr.Dr Ramat sponsors
+            20 Students to study IT programmes at Lincoln University, Malaysia.</h6>
+            <a href="#"><img src="images/news1.JPG" class="img-fluid rounded " alt=""></a>
+    </div>
+    <div class="col-sm-3 p-4">
+        <h5 id="done">Rummawa Primary School project has reached its 
+            completion phase.</h6>
+            <a href="#"><img src="images/student (1).jpg" class="img-fluid rounded " alt=""></a>
+    </div>
+    <div class="col-sm-3 p-4">
+        <h5 id="done">Hundreds of farmers from ungogo LGA benefit from farmers program</h6>
+            <a href="#"><img src="images/fam.jpeg" class="img-fluid rounded " alt=""></a>
+    </div>
+    <div class="col-sm-3 p-4">
+        <h5 id="done">Chairman Engr.Dr Ramat construct, renovate and provided the equipment to the Healthcare.</h6>
+            <a href="#"><img src="images/hospital.jpeg" class="img-fluid rounded " alt=""></a>
+    </div>
+    <div class="container-fluid text-center p-2">
+        <a class="btn btn-primary" id="lo" href="news/news.html">Read More</a>
+    </div>
+</div>
+<div class="row justify-content-center  g-0 text-center bg-primary text-light" id="foo"> 
+    <div class="col-sm-4 p-3">
+        <h3>Contact</h3>
+        <hr>
+        <p class="text-start" id="done"><img src="images/new map.svg" class="img-fluid" alt="">Ungogo, Kano State Nigeria.</p>
+        <p class="text-start" id="done"><img src="images/phone.png" class="img-fluid" alt=""> 234 906 480 9729</p>
+        <p class="text-start" id="done"><img src="images/EMAIL.png" class="img-fluid" alt=""> ungogolga@gmail.com</p>
+    </div>
+    <div class="col-sm-4 p-3">
+        <h3>Connect with us</h3>
+        <hr>
+        <a href=""><img src="images/facebook.svg" class="img-fluid" alt=""></a>
+        <a href=""><img src="images/twitter.svg" class="img-fluid" alt=""></a><br>
+        <a href=""><img src="images/linked.svg" class="img-fluid" alt=""></a>
+        <a href=""><img src="images/youtube.svg" class="img-fluid" alt=""></a>
+    </div>
+    <div class="col-sm-4 p-3">
+        <h3>Usefull Links</h3>
+        <hr>
+        <ul class="list-group text-start">
+            <a href="" id="done"><li class="list-group-item active">Kano state portal</li></a>
+            <a href=""id="done"><li class="list-group-item active">Kano Emirate</li></a>
+            <a href="" id="done"><li class="list-group-item active">Nigerian police force</li></a>
+            <a href=""id="done"><li class="list-group-item active">Ramat Foundation</li></a>
+            
+        </ul>
+    </div>
+</div>
+<div class="container-fluid text-light text-center bg-secondary p-3">
+    Copyright 2023 © | Powered by Ramat Scholar
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
 </html>
