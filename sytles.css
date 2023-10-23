@@ -36,6 +36,9 @@ body{
     width: 6%;
     margin-top: 2px;
 }
+#set{
+    width: 80%;
+}
 
   
   @media only screen and (min-width:768px){ 
@@ -111,10 +114,14 @@ body{
             font-family: Bahnschrift Light;
             font-size: 110%;
         }
+        #set{
+            width: 100%;
+        }
        
            
 
     }
+   
 
     #wht{
         width: 15%; }
