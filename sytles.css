@@ -39,17 +39,17 @@ body{
 
   
   @media only screen and (min-width:768px){ 
-    .tales{height: 480px;}
-    .go{ font-size: 125%;
+        .tales{height: 480px;}
+        .go{ font-size: 125%;
         font-family:Bahnschrift Light;
-    }
-    .go1{
+        }
+        .go1{
         font-size:280%;
         text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); 
         color:hsl(240, 33%, 96%);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    a:hover, a:active{
+        }
+        a:hover, a:active{
         /* background-color: black; */
         border-radius: 5px;
         text-decoration: none;
@@ -104,11 +104,20 @@ body{
         #hom{
             height: 700px;
         }
+        #wht{
+            width: 15%;
+        }
+        #done0{
+            font-family: Bahnschrift Light;
+            font-size: 115%;
+        }
        
            
 
     }
 
+    #wht{
+        width: 15%; }
     #log{
         border: 1px solid blue;
         background-color:rgb(233, 233, 248);
