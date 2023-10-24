@@ -40,6 +40,18 @@ body{
     width: 80%;
 }
 
+    #fuc{
+        width: 20%;
+    }
+    #rew{
+        color: red;
+    }
+    #bon{
+        background-color: rgb(210, 214, 218);
+        border-radius: 10px;
+    }
+
+
   
   @media only screen and (min-width:768px){ 
         .tales{height: 480px;}
@@ -117,6 +129,18 @@ body{
         #set{
             width: 100%;
         }
+        #fuc{
+            width: 8%;
+        }
+        #rew{
+            color: red;
+            font-size: 100%;
+        }
+        #bon{
+            background-color: rgb(224, 229, 233);
+            border-radius: 10px;
+        }
+    
        
            
 
