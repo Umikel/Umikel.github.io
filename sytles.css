@@ -46,10 +46,7 @@ body{
     #rew{
         color: red;
     }
-    #bon{
-        background-color: rgb(210, 214, 218);
-        border-radius: 10px;
-    }
+    
 
 
   
@@ -137,7 +134,7 @@ body{
             font-size: 100%;
         }
         #bon{
-            background-color: rgb(224, 229, 233);
+            background-color: rgb(210, 214, 218);
             border-radius: 10px;
         }
     
