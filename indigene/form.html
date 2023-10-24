@@ -71,7 +71,7 @@
  
     <div class="row justify-content-center  g-0 p-3">
         <div class="col-sm-7 text-center p-4" id="bon">
-            <form>
+            <form action="" method="post">
                 <div class="row mt-5">
                     <h4 class="text-center text-primary"><i>Personal Details </i></h4>
                   <div class="col-sm-4">
@@ -144,7 +144,7 @@
                   <div class="mb-3">
                     <label for="">Ward
                     <select class="form-select form-select-sm form-control" name="" id="">
-                        <option selected>Bachirawa</option>
+                        <option value="">Bachirawa</option>
                         <option value="">Gayawa</option>
                         <option value="">Kadawa</option>
                         <option value="">Karo</option>
@@ -168,19 +168,110 @@
 
                       <div class="col-sm-3 col-4">
                         <div class="mb-3">
-                            <label for="">Marial Status
+                            <label for="">Religion
                             <select class="form-select form-select-sm form-control" name="" id="">
-                                <option selected>Single</option>
-                                <option value="">Married</option>
+                                <option value="islam">Islam</option>
+                                <option value="Christian">Christian</option>
                             </select>
                         </label>
                         </div>
                       </div>
-                    
+                        <div class="col-sm-3 col-8">
+                            <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
+                            <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                          </div>
                 </div>
+                <div class="row mt-2">
+                    <h4 class="text-center text-primary"><i>Parents Details </i></h4>
+                  <div class="col-sm-4">
+                    <label for="">Father's First Name <b id="rew">*</b></label>
+                    <input type="text" class="form-control text-center form-control-sm" name="fname" required>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for=""> Father's Last Name <b id="rew">*</b></label>
+                    <input type="text" class="form-control text-center form-control-sm"  name="lname" required>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="">Father's Middle Name</label>
+                    <input type="text" class="form-control text-center form-control-sm"  name="mname">
+                  </div>
+                </div>
+                <div class="row mt-2 ">
+                    <div class="col-sm-6 col-8">
+                        <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                      </div>
+
+                      <div class="col-sm-3 col-4">
+                        <div class="mb-3">
+                            <label for="">Religion
+                            <select class="form-select form-select-sm form-control" name="" id="">
+                                <option value="islam">Islam</option>
+                                <option value="Christian">Christian</option>
+                            </select>
+                        </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-8">
+                        <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                      </div>
                 </div>
 
-                <!-- <button>hello</button> -->
+                <div class="row mt-1">
+                  <div class="col-sm-4">
+                    <label for="">Mother's First Name <b id="rew">*</b></label>
+                    <input type="text" class="form-control text-center form-control-sm" name="fname" required>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for=""> Mother's Last Name <b id="rew">*</b></label>
+                    <input type="text" class="form-control text-center form-control-sm"  name="lname" required>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="">Mother's Middle Name</label>
+                    <input type="text" class="form-control text-center form-control-sm"  name="mname">
+                  </div>
+                </div>
+                <div class="row mt-2 ">
+                    <div class="col-sm-6 col-8">
+                        <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                      </div>
+
+                      <div class="col-sm-3 col-4">
+                        <div class="mb-3">
+                            <label for="">Religion
+                            <select class="form-select form-select-sm form-control" name="" id="">
+                                <option value="islam">Islam</option>
+                                <option value="Christian">Christian</option>
+                            </select>
+                        </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-8">
+                        <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                      </div>
+                </div>
+ 
+                
+                </div>
+                <hr>
+                <p class="text-start">I certify that the information provided by me on this form is complete, 
+                    true and accurate. I understand that the information provided by me on this form
+                    shall constitute my personal information/data to be entered into 
+                    the Ungogo lacal Government Database. I consent to sharing of my data
+                    provided herein with any organization within the Nigerian Law. I hereby apply for Ungogo 
+                      Local Government Indigeneship.</p>
+                      <div class="row justify-content-center align-items-center ">
+                        <div class="col-sm-4">
+                            
+                            <button class="btn btn-primary mb-2 mt-2" id="lo">Submit</button> 
+                        </div>
+                        
+                      </div>
+
+                
                 
               </form>
         </div>
