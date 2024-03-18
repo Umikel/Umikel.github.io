@@ -1,5 +1,4 @@
-
-/* *
+      /* *
 body{
     background-color: rgb(241, 239, 239);
 }
@@ -15,162 +14,407 @@ body{
 #co{
     color: white;
 /* } */
-/* #ko{
+        /* #ko{
     text-align: center;
     font-family:cursive;
 }  */
+body{
+    background-color: #efefef;
+}
 .tales {
     width: 100%;
-    height: 250px;
-  }
-  .go1{
-    text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); 
-    color:hsl(240, 33%, 96%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 300px;
 }
-#done2{
+
+.go1 {
+    text-shadow: 1px 1px 1px blue, 0 0 15px greenyellow, 0 0 rgb(10, 36, 78);
+    color:  rgba(72, 236, 72, 0.932);
+    font-family: cursive;
+}
+
+#done2 {
     width: 70%;
     border-radius: 10px;
 }
-#spo img{
+
+#spo img {
     width: 6%;
     margin-top: 2px;
 }
-#set{
-    width: 80%;
+
+#set {
+    width: 100%;
 }
 
-    #fuc{
-        width: 20%;
+#fuc {
+    width: 20%;
+}
+
+#rew {
+    color: red;
+}
+
+#datt {
+    width: 100%;
+    height: 220px;
+}
+
+#done11 {
+    font-family: Bahnschrift Light;
+}
+
+#nop {
+    display: none;
+}
+
+#prof {
+    width: 20%;
+    height: 10vh;
+}
+
+.back {
+    background-color: rgba(0, 0, 255, 0.301);
+}
+#ami {
+    animation: 2s ease-in-out infinite alternate onee;
+}
+@keyframes onee{
+    from {
+        transform: scale(1);
     }
-    #rew{
-        color: red;
+    to {
+        transform: scale(1.2);
     }
-    #datt{
-        width: 100%;
-        height: 220px;
+}
+.loader{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 999000;
+}
+.aminate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aminate img{
+    width: 6rem;
+    height: 6rem;
+    animation: 3s ease infinite alternate rota;
+}
+@keyframes rota {
+    from{
+        transform: rotate(0deg) scale(1);
     }
-    #done11{
+    to{
+        transform: rotate(1turn) scale(1.08);
+    }
+}
+.loader.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+#unpage{
+    opacity: 0;
+    transform: translate3d(0, -1rem, 0);
+    transition: opacity .2s ease-in-out tranform .2s ease-in-out;
+}
+#unpage.visible{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+#del{
+    color: black;
+}
+.kiki {
+    background-color: #fff;
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+    .loader{
+        position: fixed;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        z-index: 999000;
+        transition: opacity .4s ease-in-out visibility .4s ease-in-out;
+
+    }
+    .aminate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aminate img{
+        width: 6rem;
+        height: 6rem;
+        animation: 3s ease infinite alternate rota;
+    }
+    @keyframes rota {
+        from{
+            transform: rotate(0deg) scale(1);
+        }
+        to{
+            transform: rotate(1turn) scale(1.08);
+        }
+    }
+    .tales {
+        height: 500px;
+    }
+    #ami {
+        animation: 2s ease-in-out infinite alternate onee;
+    }
+    @keyframes onee{
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.08);
+        }
+    }
+    .loader.hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+    #unpage{
+        opacity: 0;
+        transform: translate3d(0, -1rem, 0);
+        transition: opacity .6s ease-in-out tranform .6s ease-in-out;
+    }
+    #unpage.visible{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    body{
+    background-color: #efefef;
+}
+#del{
+    color: black;
+}
+.kiki {
+    background-color: #fff;
+}
+    .text {
+        color: white;
+        font-size: 150%;
+        padding: 8px 12px;
+        position: absolute;
+        background:rgba(0, 0, 0, 0.7);
+        top: 30px;
+        width: 50%;
+        margin-left: 35px;
+        text-align: center;
+        animation: 2s ease-in-out forwards example;
+       
+      }
+      @keyframes example{
+        from{left:0px; top: 0px;}
+        to{top: 370px;}
+        to{right: 00px;}
+        to{left: 270px;}
+      }
+      .do{
+       
+        height: 70vh;
+        
+      }
+      .gg{
+        font-family: cursive;
+      }
+
+    .go {
+        font-size: 125%;
         font-family: Bahnschrift Light;
     }
-    #nop{
+
+    #done11 {
+        /* font-family: Bahnschrift Light; */
+        font-size: 120%;
+    }
+
+    #nop {
         display: none;
     }
-    
+
+    #datt {
+        width: 100%;
+        height: 400px;
+    }
+
+    .go1 {
+        font-size: 100%;
+        text-shadow: 1px 1px 1px blue, 0 0 15px greenyellow, 0 0 rgb(10, 36, 78);
+        color:  rgba(72, 236, 72, 0.932);
+        font-family: cursive;
+    }
 
 
-  
-  @media only screen and (min-width:768px){ 
-        .tales{height: 480px;}
-        .go{ font-size: 125%;
-        font-family:Bahnschrift Light;
-        }
-        #done11{
-            /* font-family: Bahnschrift Light; */
-            font-size: 120%;
-        }
-        #nop{
-            display: none;
-        }
-        #datt{
-            width: 100%;
-            height: 400px;
-        }
-        .go1{
-        font-size:280%;
-        text-shadow: 1px 4px 4px black, 0 0 15px blue,0 0 rgb(29, 29, 230); 
-        color:hsl(240, 33%, 96%);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        a:hover, a:active{
-        /* background-color: black; */
-        border-radius: 5px;
-        text-decoration: none;
-      
-          }
-          #dabba{
-            background-color:black;
-          }
-          #active{
-            background-color: blue;
-            border-radius: 5px;
-            color: white;
-            font-family: Bahnschrift Light;
-          }
-        #nod:hover{
-            color: blue;
-        }
-        #nod{
-            font-family: Bahnschrift Light;
-            font-size: 110%;
-            color: black;
-        }
-        #spo{
-            height: 40px;
-           
-        }
-        #spo img{
-            width: 2%;
-            margin-top: 2px;
-        }
-        #spo p{
-            margin-top: 0;
-            font-family: Candara Light;
-        }
-        *{margin: 0;
-            padding: 0;
-            } 
-        #lo:hover{
-            background-color: black;
-        }
-        #done{
-            font-family: Bahnschrift Light;
-        }
-        #done2{
-            width: 70%;
-            border-radius: 10px;
-        }
-        #log{
-            border: 1px solid blue;
-            background-color:rgb(222, 222, 245);
-        }
-        #car{
-            width: 80%;
-        }
-        #hom{
-            height: 700px;
-        }
-        #wht{
-            width: 15%;
-        }
-        #done0{
-            font-family: Bahnschrift Light;
-            font-size: 110%;
-        }
-        #set{
-            width: 100%;
-        }
-        #fuc{
-            width: 8%;
-        }
-        #rew{
-            color: red;
-            font-size: 100%;
-        }
-        #bon{
-            background-color: rgb(210, 214, 218);
-            border-radius: 10px;
-        }
-    
-       
-           
+
+    #dabba {
+        background-color: black;
+    }
+
+
+
+
+    #spo {
+        height: 40px;
 
     }
-   
 
-    #wht{
-        width: 15%; }
-    #log{
+    #spo img {
+        width: 2%;
+        margin-top: 2px;
+    }
+
+    #spo p {
+        margin-top: 0;
+        font-family: Candara Light;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #lo:hover {
+        background-color: black;
+    }
+
+    #done {
+        font-family: Bahnschrift Light;
+    }
+
+    #done2 {
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    #log {
         border: 1px solid blue;
-        background-color:rgb(233, 233, 248);
+        background-color: rgb(222, 222, 245);
     }
+
+    #car {
+        width: 80%;
+    }
+
+    #hom {
+        height: 700px;
+    }
+
+    #wht {
+        width: 15%;
+    }
+
+    #done0 {
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+    }
+
+    #set {
+        width: 100%;
+    }
+
+    #fuc {
+        width: 8%;
+    }
+
+    #rew {
+        color: red;
+        font-size: 100%;
+    }
+
+    #bon {
+        background-color: rgb(210, 214, 218);
+        border-radius: 10px;
+    }
+
+    #prof {
+        width: 20%;
+        height: 10vh;
+    }
+
+
+
+
+}
+
+
+#wht {
+    width: 15%;
+}
+
+#log {
+    border: 1px solid blue;
+    background-color: rgb(233, 233, 248);
+}
+.marquee-container {
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: 100%;
+}
+.marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay::before, .overlay::after {
+  background: linear-gradient(to right, var(--gradient-color));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+}
+.overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee {
+  flex: 0 0 auto;
+  min-width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

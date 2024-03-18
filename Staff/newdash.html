@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo 1.jfif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sytles.css">
+    <title>Staff portal</title>
+</head>
+<body>
+    <style>
+         #prof{
+            width: 40%;
+            height: 15vh;
+            border-radius: 100px;
+        }
+        #nod{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(0, 0, 255, 0.74);
+        color: white;
+    }
+    #nod:hover{
+        
+        background-color: black;
+        color: black;
+    }
+          @media only screen and (min-width:768px){ 
+         #prof{
+            width: 45%;
+            height: 20vh;
+            border-radius: 100px;
+            margin-bottom: 3vh;
+        }
+        #nod:hover{
+        
+        background-color: black;
+        color: black;
+    }
+    #nod{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(0, 0, 255, 0.74);
+        color: white;
+    }
+    #nodo{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(15, 15, 37, 0.74);
+        color: white;
+    }
+
+    }
+    </style>
+    
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow mb-1 sticky-top">
+          <div class="container">
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                   
+                </ul>
+               
+                       <h5 class="m-2 ">Umar Musa</h5> <a class="nav-link text-danger" id="nood" href="logout.php"><strong>Logout</strong></a>
+                          </div>
+      </div>
+    </nav>
+    <div class="row justify-content-center g-0 p-3">
+        <div class="col-sm-3 p-3 border-end border-primary text-center ">
+              <center><img id="prof" src="../images/eee.jpeg" class="img-fluid " alt="Profile Pic"/> </center>
+            <h5>Umar musa</h5>
+            <h5>Ung/Adm/100012</h5>
+            <h5>Staff</h5>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nodo" href="logout.php">Dashboard</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Pending Payment</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Pending Register</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Sucessful Payment</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Check Indigene Details</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Settings</a>
+
+    </div>
+    <div class="col-sm-9 p-3 ">
+        <div class="container p-2 bg-primary br-3 text-center">
+            <h4 class="text-light">Welcome <i>Umar Musa</i></h4>
+         </div>
+         <div class="row justify-content-center text-center  g-0 p-1">
+         <div class="col-sm-2 rounded p-3 text-center bg-primary text-light m-3">
+            <h6>Pending Register</h6>
+            <h1>64</h1>
+         </div>
+         <div class="col-sm-2 rounded p-3 text-center bg-primary text-light m-3">
+            <h6>Pending Payment</h6>
+            <h1>64</h1>
+         </div>
+         <div class="col-sm-2 rounded p-3 text-center bg-primary text-light m-3">
+            <h6>Sucessful Payment</h6>
+            <h1>64</h1>
+         </div>
+         <div class="col-sm-2 rounded p-3 text-center bg-primary text-light m-3">
+            <h6>No of All Indigenes</h6>
+            <h1>64</h1>
+         </div>
+        </div>
+        <div class="container p-2 br-3 text-center">
+            <h4 class="text-danger"> <i>Recents Pending Payment</i></h4>
+         </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-border table-primary align-middle rounded">
+                <thead class="table-secondary">
+                
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone No</th>
+                        <th>Ward</th>
+                        <th>Payment Status</th>
+                        <th>Date</th>
+                        <th>Approve</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr
+                        class="table-primary"
+                    >
+                        <td scope="row">Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                        <td><button name="" id="" class="btn btn-primary " type="submit">Approve</button>
+                        <td><button name="" id="" class="btn btn-danger" type="submit">Delete </button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+            </table>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder=""
+            />
+            <small id="helpId" class="form-text text-muted">Help text</small>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder=""
+            />
+            <small id="helpId" class="form-text text-muted">Help text</small>
+        </div>
+        
+        
+        
+        
+    </div>
+    </div>
+    </div>
+    
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

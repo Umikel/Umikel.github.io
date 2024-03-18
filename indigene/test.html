@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo 1.jfif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sytles.css">
+    <title>Update Details</title>
+</head>
+<body>
+    <style>
+      .marquee-container {
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: 100%;
+}
+.marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay::before, .overlay::after {
+  background: linear-gradient(to right, var(--gradient-color));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+}
+.overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee {
+  flex: 0 0 auto;
+  min-width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+         #prof{
+            width: 40%;
+            height: 15vh;
+            border-radius: 100px;
+        }
+        #nod{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(0, 0, 255, 0.74);
+        color: white;
+    }
+    #nodo{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(15, 15, 37, 0.74);
+        color: white;
+    }
+    #nod:hover{
+        
+        background-color: black;
+        color: black;
+    }
+          @media only screen and (min-width:768px){ 
+         #prof{
+            width: 45%;
+            height: 20vh;
+            border-radius: 100px;
+            margin-bottom: 3vh;
+        }
+        #nod:hover{
+        
+        background-color: black;
+        color: black;
+    }
+    #nod{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(0, 0, 255, 0.74);
+        color: white;
+    }
+    #nodo{
+        font-family: Bahnschrift Light;
+        font-size: 110%;
+        background-color: rgba(15, 15, 37, 0.74);
+        color: white;
+    }
+
+    }
+    </style>
+    
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow mb-1 sticky-top nav-underline">
+          <div class="container">
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                   
+                </ul>
+               
+                       <h5 class="m-2 ">Umar Musa</h5> <a class="nav-link text-danger" id="nood" href="logout.php"><strong>Logout</strong></a>
+                          </div>
+                          <button type="button" class="btn btn-primary position-relative m-3">
+                            Inbox
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              99+
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                          </button>
+      </div>
+    </nav>
+    <div class="row justify-content-center g-0 p-3">
+        <div class="col-sm-3 p-3 border-end border-primary text-center display-fixed">
+              <center><img id="prof" src="../images/eee.jpeg" class="img-fluid " alt="Profile Pic"/> </center>
+            <h5>Umar musa</h5>
+            <h5>indigene ID</h5>
+            <h5>Ward</h5>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Dashboard</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nodo" href="logout.php">Update Record</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Payment</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Payment Status</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Print Indigene Certificate</a>
+            <a class="nav-link text-light m-2 rounded p-1 "  id="nod" href="logout.php">Settings</a>
+
+    </div>
+    <div class="col-sm-9 p-3 ">
+        <div class="container p-2 bg-primary br-3 text-center">
+            <h4 class="text-light">Welcome <i>Umar Musa</i></h4>
+         </div>
+        
+                <form action="../slip.php" method="post">
+                    <div class="row mt-5">
+                        <h4 class="text-center text-primary"><i>Personal Details </i></h4>
+                      <div class="col-sm-3">
+                        <label for="">First Name <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-center form-control-sm" name="fname" disabled readonly>
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="">Last Name <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-center form-control-sm"  name="lname" disabled readonly>
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="">Middle Name</label>
+                        <input type="text" class="form-control text-center form-control-sm"  name="mname">
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="">Passport <b id="rew">*</b></label>
+                        <input type="file" class="form-control text-center form-control-sm"  name="Passport">
+                      </div>
+                      
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-sm-3 col-6">
+                        <label for="">Email Address: <b id="rew">*</b>
+                        <input type="email" class="form-control text-center form-control-sm" name="email"  disabled readonly>
+                    </label>
+                      </div>
+                      <div class="col-sm-3 col-6">
+                        <label for="">Phone Numer: <b id="rew">*</b>
+                        <input type="tel" class="form-control text-center form-control-sm"  name="phone"  disabled readonly>
+                    </label>
+                      </div>
+                      <div class="col-sm-3 col-6 text-center">
+                        <label for="">Date of Birth 
+                        <input type="date" class="form-control form-control-sm"  name="dob">
+                    </label>
+                      </div>
+                    <div class="col-sm-3 col-6">
+                        <label for="">Gender 
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" id="" value="m">
+                          <label class="form-check-label" for="">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="" value="f">
+                            <label class="form-check-label" for="">
+                              Female
+                            </label>
+                          </div>
+                    </label>
+                    </div>
+                    <div class="row mt-2 ">
+                      <div class="col-sm-3 col-6">
+                        <div class="mb-3">
+                            <label for="">Marial Status
+                            <select class="form-select form-select-sm form-control" name="mstatus" id="">
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                            </select>
+                        </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-6">
+                        <label for="">State of origin
+                            <input class="form-control form-control-sm" name="state[]" type="text" value="Kano" disabled readonly>
+                    </label>
+                      </div>
+                      <div class="col-sm-3 col-6">
+                        <label for="">LGA
+                            <input class="form-control form-control-sm" name="lga[]" type="text" value="Ungogo" disabled readonly>
+                    </label>
+                      </div>
+                      <div class="col-sm-3 col-6">
+                      <div class="mb-3">
+                        <label for="">Ward
+                        <select class="form-select form-select-sm form-control" name="ward[]" id="">
+                            <option value="Bachirawa">Bachirawa</option>
+                            <option value="Gayawa">Gayawa</option>
+                            <option value="Kadawa">Kadawa</option>
+                            <option value="Karo">Karo</option>
+                            <option value="Panisau">Panisau</option>
+                            <option value="Ranzaga">Ranzaga</option>
+                            <option value="Rigiyar Zaki">Rigiyar Zaki</option>
+                            <option value="Tudun Fulani">Tudun Fulani</option>
+                            <option value="Ungogo">Ungogo</option>
+                            <option value="Yadakunya">Yadakunya</option>
+                            <option value="Zango">Zango</option>
+                            
+                        </select>
+                    </label>
+                    </div>
+                      </div>
+                    <div class="row mt-2 ">
+                        <div class="col-sm-6 col-8">
+                            <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
+                            <input type="text" class="form-control text-left form-control-sm" name="address" required>
+                          </div>
+    
+                          <div class="col-sm-3 col-4">
+                            <div class="mb-3">
+                                <label for="">Religion
+                                <select class="form-select form-select-sm form-control" name="Religion" id="">
+                                    <option value="islam">Islam</option>
+                                    <option value="Christian">Christian</option>
+                                </select>
+                            </label>
+                            </div>
+                          </div>
+                            <div class="col-sm-3 col-8">
+                                <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
+                                <input type="text" class="form-control text-left form-control-sm" name="pobirth" required>
+                              </div>
+                    </div>
+                    </div>
+                    <div class="row mt-2">
+                        <h4 class="text-center text-primary"><i>Parents Details </i></h4>
+                      <div class="col-sm-4">
+                        <label for="">Father's First Name <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-center form-control-sm" name="ffname" required>
+                      </div>
+                      <div class="col-sm-4">
+                        <label for=""> Father's Last Name <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-center form-control-sm"  name="flname" required>
+                      </div>
+                      <div class="col-sm-4">
+                        <label for="">Father's Middle Name</label>
+                        <input type="text" class="form-control text-center form-control-sm"  name="fmname">
+                      </div>
+                    </div>
+                    <div class="row mt-2 ">
+                        <div class="col-sm-6 col-8">
+                            <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
+                            <input type="text" class="form-control text-left form-control-sm" name="faddress" required>
+                          </div>
+    
+                          <div class="col-sm-3 col-4">
+                            <div class="mb-3">
+                                <label for="">Religion
+                                <select class="form-select form-select-sm form-control" name="freligion[]" id="">
+                                    <option value="islam">Islam</option>
+                                    <option value="Christian">Christian</option>
+                                </select>
+                            </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 col-8">
+                            <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
+                            <input type="text" class="form-control text-left form-control-sm" name="fpobirth" required>
+                          </div>
+                    </div>
+    
+                    <div class="row mt-1">
+                      <div class="col-sm-4">
+                        <label for="">Mother's First Name <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-center form-control-sm" name="mfname" required>
+                      </div>
+                      <div class="col-sm-4">
+                        <label for=""> Mother's Last Name <b id="rew">*</b></label>
+                        <input type="text" class="form-control text-center form-control-sm"  name="mlname" required>
+                      </div>
+                      <div class="col-sm-4">
+                        <label for="">Mother's Middle Name</label>
+                        <input type="text" class="form-control text-center form-control-sm"  name="mmname">
+                      </div>
+                    </div>
+                    <div class="row mt-2 ">
+                        <div class="col-sm-6 col-8">
+                            <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
+                            <input type="text" class="form-control text-left form-control-sm" name="maddress" required>
+                          </div>
+    
+                          <div class="col-sm-3 col-4">
+                            <div class="mb-3">
+                                <label for="">Religion</label>
+                                <select class="form-select form-select-sm form-control" name="mreligion[]" id="">
+                                    <option value="islam">Islam</option>
+                                    <option value="Christian">Christian</option>
+                                </select>
+                            
+                            </div>
+                          </div>
+                          <div class="col-sm-3 col-8">
+                            <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
+                            <input type="text" class="form-control text-left form-control-sm" name="mpobirth" required>
+                          </div>
+                    </div>
+     
+                    
+                    </div>
+                    <p class="text-start mt-3">I certify that the information provided by me on this form is complete, 
+                        true and accurate. I understand that the information provided by me on this form
+                        shall constitute my personal information/data to be entered into 
+                        the Ungogo lacal Government Database. I consent to sharing of my data
+                        provided herein with any organization within the Nigerian Law. I hereby apply for Ungogo 
+                          Local Government Indigeneship.</p>
+                          <div class="row justify-content-center align-items-center ">
+                            <div class="col-sm-4">
+                                
+                               <center> <button class="btn btn-primary mb-2 mt-2" id="lo">Update</button> </center>
+                            </div>
+                            
+                          </div>
+    
+                    
+                    
+                  </form>
+            </div>
+                 
+        
+        
+        
+    </div>
+    </div>
+    </div>
+    
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

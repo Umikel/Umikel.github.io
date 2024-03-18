@@ -21,7 +21,42 @@
     
     </div>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow mb-1 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <svg>
+            <button class="btn btn-primary">Button</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-sm navbar-light bg-white shadow mb-1 sticky-top">
           <div class="container">
             
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -45,8 +80,7 @@
                     <li class="nav-item">
                         <a class="nav-link" id="nod" href="../news/news.html"><strong>News & Event</strong></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nod" href="#"><strong>Projects</strong></a>
+                    
                     <li class="nav-item">
                             <a class="nav-link" id="nod"  href="../Staff/Staff.html"><strong>Staff Portal</strong></a>
                     </li>
@@ -56,14 +90,14 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" id="nod" href="../ungogo/history.html">History of Ugg</a>
                             <a class="dropdown-item" id="nod" href="../ungogo/wards.html">wards in ungogo</a>
-                            <a class="dropdown-item" id="nod" href="#">Management Staff</a>
+                            
                         </div>
                     </li>
                 </ul>
                 <img src="../images/logo 1.jfif" class="img-fluid" width="60px"  height="50" class="d-inline-block align-text-top">
             </div>
       </div>
-    </nav>
+    </nav> -->
     <div class="container-fluid text-center text-primary rounded p-4">
         <h2>Indigeneship Registration</h2>
         <center><img src="../images/logo 1.jfif" class="img-fluid" id="fuc" alt=""></center>
@@ -71,7 +105,7 @@
  
     <div class="row justify-content-center  g-0 p-3">
         <div class="col-sm-7 text-center p-4" id="bon">
-            <form action="" method="post">
+            <form action="../slip.php" method="post">
                 <div class="row mt-5">
                     <h4 class="text-center text-primary"><i>Personal Details </i></h4>
                   <div class="col-sm-4">
@@ -100,7 +134,7 @@
                   </div>
                   <div class="col-sm-3 col-6 text-center">
                     <label for="">Date of Birth 
-                    <input type="date" class="form-control form-control-sm"  name="mname">
+                    <input type="date" class="form-control form-control-sm"  name="dob">
                 </label>
                   </div>
                 <div class="col-sm-3 col-6">
@@ -123,38 +157,38 @@
                   <div class="col-sm-3 col-6">
                     <div class="mb-3">
                         <label for="">Marial Status
-                        <select class="form-select form-select-sm form-control" name="" id="">
-                            <option selected>Single</option>
-                            <option value="">Married</option>
+                        <select class="form-select form-select-sm form-control" name="mstatus" id="">
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
                         </select>
                     </label>
                     </div>
                   </div>
                   <div class="col-sm-3 col-6">
                     <label for="">State of origin
-                        <input class="form-control form-control-sm" type="text" value="Kano" disabled readonly>
+                        <input class="form-control form-control-sm" name="state[]" type="text" value="Kano" disabled readonly>
                 </label>
                   </div>
                   <div class="col-sm-3 col-6">
                     <label for="">LGA
-                        <input class="form-control form-control-sm" type="text" value="Ungogo" disabled readonly>
+                        <input class="form-control form-control-sm" name="lga[]" type="text" value="Ungogo" disabled readonly>
                 </label>
                   </div>
                   <div class="col-sm-3 col-6">
                   <div class="mb-3">
                     <label for="">Ward
-                    <select class="form-select form-select-sm form-control" name="" id="">
-                        <option value="">Bachirawa</option>
-                        <option value="">Gayawa</option>
-                        <option value="">Kadawa</option>
-                        <option value="">Karo</option>
-                        <option value="">Panisau</option>
-                        <option value="">Ranzaga</option>
-                        <option value="">Rigiyar Zaki</option>
-                        <option value="">Tudun Fulani</option>
-                        <option value="">Ungogo</option>
-                        <option value="">Yadakunya</option>
-                        <option value="">Zango</option>
+                    <select class="form-select form-select-sm form-control" name="ward[]" id="">
+                        <option value="Bachirawa">Bachirawa</option>
+                        <option value="Gayawa">Gayawa</option>
+                        <option value="Kadawa">Kadawa</option>
+                        <option value="Karo">Karo</option>
+                        <option value="Panisau">Panisau</option>
+                        <option value="Ranzaga">Ranzaga</option>
+                        <option value="Rigiyar Zaki">Rigiyar Zaki</option>
+                        <option value="Tudun Fulani">Tudun Fulani</option>
+                        <option value="Ungogo">Ungogo</option>
+                        <option value="Yadakunya">Yadakunya</option>
+                        <option value="Zango">Zango</option>
                         
                     </select>
                 </label>
@@ -163,13 +197,13 @@
                 <div class="row mt-2 ">
                     <div class="col-sm-6 col-8">
                         <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
-                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                        <input type="text" class="form-control text-left form-control-sm" name="address" required>
                       </div>
 
                       <div class="col-sm-3 col-4">
                         <div class="mb-3">
                             <label for="">Religion
-                            <select class="form-select form-select-sm form-control" name="" id="">
+                            <select class="form-select form-select-sm form-control" name="Religion" id="">
                                 <option value="islam">Islam</option>
                                 <option value="Christian">Christian</option>
                             </select>
@@ -178,7 +212,7 @@
                       </div>
                         <div class="col-sm-3 col-8">
                             <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
-                            <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                            <input type="text" class="form-control text-left form-control-sm" name="pobirth" required>
                           </div>
                 </div>
                 </div>
@@ -186,27 +220,27 @@
                     <h4 class="text-center text-primary"><i>Parents Details </i></h4>
                   <div class="col-sm-4">
                     <label for="">Father's First Name <b id="rew">*</b></label>
-                    <input type="text" class="form-control text-center form-control-sm" name="fname" required>
+                    <input type="text" class="form-control text-center form-control-sm" name="ffname" required>
                   </div>
                   <div class="col-sm-4">
                     <label for=""> Father's Last Name <b id="rew">*</b></label>
-                    <input type="text" class="form-control text-center form-control-sm"  name="lname" required>
+                    <input type="text" class="form-control text-center form-control-sm"  name="flname" required>
                   </div>
                   <div class="col-sm-4">
                     <label for="">Father's Middle Name</label>
-                    <input type="text" class="form-control text-center form-control-sm"  name="mname">
+                    <input type="text" class="form-control text-center form-control-sm"  name="fmname">
                   </div>
                 </div>
                 <div class="row mt-2 ">
                     <div class="col-sm-6 col-8">
                         <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
-                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                        <input type="text" class="form-control text-left form-control-sm" name="faddress" required>
                       </div>
 
                       <div class="col-sm-3 col-4">
                         <div class="mb-3">
                             <label for="">Religion
-                            <select class="form-select form-select-sm form-control" name="" id="">
+                            <select class="form-select form-select-sm form-control" name="freligion[]" id="">
                                 <option value="islam">Islam</option>
                                 <option value="Christian">Christian</option>
                             </select>
@@ -215,34 +249,34 @@
                       </div>
                       <div class="col-sm-3 col-8">
                         <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
-                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                        <input type="text" class="form-control text-left form-control-sm" name="fpobirth" required>
                       </div>
                 </div>
 
                 <div class="row mt-1">
                   <div class="col-sm-4">
                     <label for="">Mother's First Name <b id="rew">*</b></label>
-                    <input type="text" class="form-control text-center form-control-sm" name="fname" required>
+                    <input type="text" class="form-control text-center form-control-sm" name="mfname" required>
                   </div>
                   <div class="col-sm-4">
                     <label for=""> Mother's Last Name <b id="rew">*</b></label>
-                    <input type="text" class="form-control text-center form-control-sm"  name="lname" required>
+                    <input type="text" class="form-control text-center form-control-sm"  name="mlname" required>
                   </div>
                   <div class="col-sm-4">
                     <label for="">Mother's Middle Name</label>
-                    <input type="text" class="form-control text-center form-control-sm"  name="mname">
+                    <input type="text" class="form-control text-center form-control-sm"  name="mmname">
                   </div>
                 </div>
                 <div class="row mt-2 ">
                     <div class="col-sm-6 col-8">
                         <label for="" class="text-left">Resident Address: <b id="rew">*</b></label>
-                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                        <input type="text" class="form-control text-left form-control-sm" name="maddress" required>
                       </div>
 
                       <div class="col-sm-3 col-4">
                         <div class="mb-3">
                             <label for="">Religion</label>
-                            <select class="form-select form-select-sm form-control" name="" id="">
+                            <select class="form-select form-select-sm form-control" name="mreligion[]" id="">
                                 <option value="islam">Islam</option>
                                 <option value="Christian">Christian</option>
                             </select>
@@ -251,7 +285,7 @@
                       </div>
                       <div class="col-sm-3 col-8">
                         <label for="" class="text-left">Place of Birth: <b id="rew">*</b></label>
-                        <input type="text" class="form-control text-left form-control-sm" name="fname" required>
+                        <input type="text" class="form-control text-left form-control-sm" name="mpobirth" required>
                       </div>
                 </div>
  
